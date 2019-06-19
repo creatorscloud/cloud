@@ -1,6 +1,218 @@
-<html>
-<header><title>This is title</title></header>
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Creators.Cloud</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#000000">
+ 
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+    body {font-family: 'Open Sans', sans-serif;}
+    
+    a, a:visited {
+        color:black}
+    a:hover {color: #4b4b4b;}
+    
+    img {filter: grayscale(100); width: 160px;
+    border: 1px solid #000;
+    }
+
+    h1 {
+    }
+    h1 span {color:grey;
+    font-weight: 200}
+    
+    h2 {
+        font-size: 1em;
+        padding: 0;
+        margin: 0;
+    
+    }
+    
+    span {
+        font-size: .8em;
+        
+    }
+    
+#logo {
+    margin: auto;
+    width: 710px;
+    
+   
+    
+    margin-top: 25vh;
+    text-align: center;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='136.083' height='88.66'%3E%3Cpath d='M65.984 5.021C80.597 5.582 91.818 11.753 99.592 24c.377.594.727.811 1.459.775 11.036-.535 22.239 6.339 27.088 16.577 8.274 17.475-1.635 37.678-20.546 41.699-7.721 1.643-14.986.201-21.685-3.986-.485-.303-.819-.295-1.326-.041-13.501 6.771-26.719 6.234-39.617-1.627-.707-.432-1.213-.521-1.994-.154-16.013 7.523-34.856-2.707-37.306-20.23-2.039-14.584 7.822-27.791 22.419-30.017.458-.07.932-.198 1.38-.142 1.414.177 1.965-.658 2.613-1.752C39.74 12.156 51.2 5.627 65.984 5.021'/%3E%3C/svg%3E");
+        background-position: center;
+    background-repeat: no-repeat;
+    height: 50vh;
+    min-height: 520px;
+    position: relative;
+    }
+    
+#cloud  {
+    width: 200px;
+    height: 90px;
+    margin: 0 auto;
+    z-index: 3;
+    position: relative;
+    top: 200px;
+    }
+    
+    #cloud:hover {
+       
+    } 
+#cloud div  {
+    transition: all ease 2s;
+    }
+#cloud:hover ~ .team {
+    opacity: 1;
+    transition: all ease 2s;
+    position: absolute;
+    z-index: 2;
+    }
+
+#cloud:hover ~ #claim h1 {
+   margin-top: 50px;  
+    transition: all 2s ease;
+    }
+
+#cloud:hover ~ #claim h2 {
+    padding-top: 150px;
+    transition: all ease 2s;
+    }
+    
+#oli {
+    top: 0;
+    right: 0;
+    }
+    
+
+#meli {
+    left: 0;
+    top: 0;
+    }
+    
+#carlos {
+    bottom: 0;
+    right: 0;
+    }
+#andi {
+    bottom: 0;
+    left: 0;
+    }
+    
+.team {
+    position: absolute;
+    width: 160px;
+    opacity: 0;
+    transition: all 5s ease;
+    }
+    
+    .team:hover {
+        opacity: 1;
+    }
+    #claim {
+        left:50%;
+        width: 500px;
+        margin-left: -250px;
+        opacity: 0;
+    }
+    #claim h1{
+margin-top: 150px;
+        transition: all 2s ease;    
+
+    }    
+    
+    #claim h2 {
+        padding-top: 0;
+        transition: all ease 2s;
+    }
+    
+    @media (max-width: 800px) {
+        
+        #cloud  {display: none}
+        #claim, .team  {
+            opacity: 1;
+          
+        }
+        #claim {  width: 100%; margin: 0; left: auto}
+        .team {position: relative; margin: 0 auto;}
+        #oli, #carlos, #andi ,#meli {
+            left: auto; 
+            top: auto;
+            bottom: auto;
+            right: auto;
+        }
+        
+        #logo {
+            width: 100%;
+            margin-top: 0;
+            height: auto;
+            min-height: auto;
+            text-align: center;
+            max-width: none;
+        }
+    
+    }
+    
+    
+    </style>
+
+</head>
+
 <body>
-Hello world
+   
+   
+   <div id="logo">
+       <div id="cloud"></div>
+       
+             <div id="meli" class="team">
+                  
+          <img src="melanie-wendt.jpg" alt="Melanie Wendt">
+           <h2>Melanie&nbsp;Wendt</h2>
+          <span>Werbung · Design</span><br>
+          <span><a href="https://wendt-design.de/">wendt-design.de</a></span>
+      </div>
+       
+      <div id="oli" class="team">
+          <img src="oliver-hahn.jpg" alt="Oliver Hahn">
+          <h2>Oliver&nbsp;Hahn</h2>
+          <span>Konzept · Marketing</span><br>
+          <span><a href="https://soulconsulting.de/">soulconsulting.de</a></span>
+      </div>
+
+         
+
+    <div id="carlos" class="team">
+          <img src="carlos-wallutt.jpg" alt="Carlos Wallutt">
+                   <h2>Carlos&nbsp;Wallutt</h2>
+          <span>Web · Social Media</span><br>
+          <span><a href="https://wallutt.com/">wallutt.com</a></span>
+      </div>
+          
+         <div id="andi" class="team">
+          <img src="andreas-kornprobst.jpg">
+                   <h2>Andreas&nbsp;Kornprobst</h2>
+          <span>Film · Event</span><br>
+          <span><a href="http://www.kornprobst.tv/">kornprobst.tv</a></span>
+          </div>
+       
+      
+<div class="team" id="claim">
+ <h1>Creators.<span>Cloud</span></h1>
+ <h2>think&nbsp;create&nbsp;love&nbsp;</h2>
+ </div>
+  </div>     
+    
 </body>
 </html>
